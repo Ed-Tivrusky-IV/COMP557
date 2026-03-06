@@ -1,0 +1,6 @@
+moderngl==5.12.0
+PyQt5==5.15.11
+numpy==1.26.4
+matplotlib==3.10.6
+trimesh==4.8.1
+pyglm==2.8.2

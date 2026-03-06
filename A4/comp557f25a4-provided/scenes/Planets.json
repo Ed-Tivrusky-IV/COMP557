@@ -1,0 +1,26 @@
+{ 
+"resolution": [1024, 512],
+"AA_jitter": false, 
+"AA_samples": 1,
+"ambient": [0.1, 0.1, 0.1],
+"camera": { "position": [-5.0, 1.0, 0.0], "lookAt": [3.0, 0.0, 0.0], "up": [0.0, 1.0, 0.0], "fovy": 45.0 },
+"materials": [
+    { "name": "ocean_blue", "diffuse": [0.255, 0.63, 1.0], "specular": [0.05, 0.05, 0.05], "shininess": 320 },
+    { "name": "red", "diffuse": [0.62, 0.11, 0.051], "specular": [0.4, 0.4, 0.4], "shininess": 320 },
+    { "name": "orange", "diffuse": [0.9, 0.5, 0.2], "specular": [0.05, 0.05, 0.05], "shininess": 320 },
+    { "name": "dirt", "diffuse": [0.80, 0.58, 0.3], "specular": [0.1, 0.1, 0.1], "shininess": 320 },
+    { "name": "cyan", "diffuse": [0.0, 1.0, 1.0], "specular": [0.5, 0.5, 0.5], "shininess": 320 }
+],    
+"objects": [
+    { "name": "Earth", "type": "sphere", "radius": 0.1, "position": [1.0, 0.0, 0.0], "materials": ["ocean_blue"] },
+    { "name": "Mars", "type": "sphere", "radius": 0.053, "position": [0.52, 0.0, 1.43], "materials": ["red"] },
+    { "name": "Jupiter", "type": "sphere", "radius": 1.12, "position": [4.5, 0.0, 2.25], "materials": ["orange"] },
+    { "name": "Saturn", "type": "sphere","radius": 0.942, "position": [6.74, 0.0, -6.74], "materials": ["dirt"] },
+    { "name": "Saturn_Ring", "type": "ring", "inner_radius": 1.0, "outer_radius": 2, "position": [6.74, 0.0, -6.74], "normal": [-0.2, 1.0, 0.0], "materials": ["orange"] },
+    { "name": "Uranus", "type": "sphere", "radius": 0.4, "position": [11.5, 0.0, 11.5], "materials": ["cyan"] },
+    { "name": "Uranus_Ring", "type": "ring", "inner_radius": 0.5, "outer_radius": 0.7, "position": [11.5, 0.0, 11.5], "normal": [0.0, 1.0, 0.0], "materials": ["ocean_blue"],  "rotation": [0, 0, 90] }   
+],
+"lights": [
+    { "name": "light", "type": "point", "position": [0.0, 0.0, 0.0], "colour": [1.0, 1.0, 1.0], "power": 10.0, "attenuation": [1.0, 1.0, 0.05] }
+]
+}
